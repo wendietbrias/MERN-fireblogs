@@ -18,7 +18,7 @@ const Detail = () => {
   return (
     <section className="w-full min-h-screen bg-gray-50">
       <Navbar />
-      <div className="w-[65%] mx-auto py-10">
+      <div className="w-full lg:px-0 px-6 lg:w-[65%] mx-auto py-10">
         <h2 className="text-3xl font-medium">{detail?.title}</h2>
         <p className="text-md font-normal mt-4">
           Posted on :{" "}

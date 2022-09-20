@@ -12,9 +12,9 @@ const Home = ({ loading }) => {
     <section className="w-full min-h-screen">
       <Navbar />
       {!auth && (
-        <div className={`${styles.stretch}`}>
-          <div className="w-[40%] bg-gray-700 text-white flex items-center flex-col justify-center">
-            <div>
+        <div className={`${styles.stretch} lg:flex-row flex-col`}>
+          <div className="w-full order-2 lg:order-none lg:w-[40%] bg-gray-700 text-white flex items-center flex-col justify-center">
+            <div className="lg:py-0 py-7">
               <h2 className="font-normal text-4xl">WELCOME!</h2>
               <p className="text-sm font-normal leading-6  mt-4 mb-7">
                 Weekly blog articles with all things <br /> programming
@@ -27,11 +27,11 @@ const Home = ({ loading }) => {
           <img
             src="images/coding.jpg"
             alt="coding"
-            className="w-[60%] h-[85vh]"
+            className="w-full lg:w-[60%] h-[70vh] lg:h-[85vh] lg:order-none order-1"
           />
         </div>
       )}
-      <div className={`${styles.stretch} flex-col md:flex-row`}>
+      <div className={`${styles.stretch} flex-col lg:flex-row`}>
         <img
           src="images/vue.png"
           className={`w-full lg:w-[60%] h-[65vh] lg:h-[70vh`}

@@ -144,7 +144,7 @@ const Auth = () => {
           )}
         </div>
       </div>
-      <div className="sm:hidden lg:block lg:w-[60%]">
+      <div className="xs:hidden sm:hidden lg:block lg:w-[60%]">
         <img src={bg} alt="bg" className="w-full min-h-screen" />
       </div>
     </section>
